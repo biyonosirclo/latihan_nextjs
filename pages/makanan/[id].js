@@ -10,7 +10,7 @@ export default function MakananDetail() {
     
     const { query } = router;
 
-    const callApi = async() => {
+    const CallApi = async() => {
         try{
             console.log(query.id);
             const res = await fetch('/api/makanan/'+query.id);
@@ -23,7 +23,7 @@ export default function MakananDetail() {
     }
 
     useEffect(() => {
-        callApi();
+        CallApi();
     }, []);
   return (
     <div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import style from '@/styles/error.module.css';
-export default function error500() {
+export default function Error500() {
     return (
         <div className={style.errors}>
             <h1>500</h1>

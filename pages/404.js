@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 import { useRouter } from 'next/router';
 import style from '../styles/error.module.css';
-export default function notFound404() {
+import Link from 'next/link';
+export default function NotFound404() {
     const [redirectSeconds, setRedirectSeconds] = useState(5);
     const router = useRouter();
     
@@ -13,7 +14,6 @@ export default function notFound404() {
         }
     
         setTimeout(() => {
-            console.log(redirectSeconds);
             setRedirectSeconds((redirectSeconds) => redirectSeconds - 1);
         }, 1000)
     }, [redirectSeconds]);
@@ -27,7 +27,7 @@ export default function notFound404() {
                   </div>
                   <h2>Page not found</h2>
                   <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
-                  <a href="/">home page</a>
+                  <Link href={'/'}><a>home page</a></Link>
               </div>
           </div>
     </div>
