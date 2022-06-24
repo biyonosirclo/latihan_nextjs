@@ -1,0 +1,26 @@
+/* navbar konten css */
+.header {
+    background-color: azure;
+    padding: 10px;
+    position: sticky;
+    top:0;
+    z-index: 9;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .logo {
+    /* max-height:50px ; */
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 5px 15px;
+
+}
