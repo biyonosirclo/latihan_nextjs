@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 
-export default function makananDetail() {
+export default function MakananDetail() {
     const [data,setData] = useState();
 
     const router = useRouter();

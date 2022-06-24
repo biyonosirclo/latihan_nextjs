@@ -5,11 +5,7 @@ import style from '../styles/error.module.css';
 export default function notFound404() {
     const [redirectSeconds, setRedirectSeconds] = useState(5);
     const router = useRouter();
-    const query = router.query;
-    const callRedirect = {
-        
-    }
-
+    
     useEffect(() => {
         if (redirectSeconds < 0) {
             router.push('/');
