@@ -27,7 +27,7 @@ export default function AvatarIndex() {
                                     photoUrl:avatar.photoUrl,
                                 }
                             }
-                            } as={`/avatar/${avatar._id}`}>
+                            } >
                             <a>
                                 <div className='card'>
                                     <Image 

@@ -23,8 +23,11 @@ export default function MakananDetail() {
     }
 
     useEffect(() => {
-        CallApi();
-    }, []);
+        if(router.isReady){
+            CallApi();
+        }
+       
+    }, [router.isReady]);
   return (
     <div>
         <div className='container'>
