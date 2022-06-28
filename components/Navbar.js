@@ -44,6 +44,17 @@ export default function Navbar() {
                                 <a>Makanan</a>
                             </Link>
                         </li>
+
+                        <li>
+                            <Link href="/rendering">
+                                <a>Rendering fetching</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/apollo">
+                                <a>apollo</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
